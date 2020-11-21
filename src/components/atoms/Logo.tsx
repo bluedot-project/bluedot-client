@@ -1,13 +1,14 @@
-import { Button } from '@chakra-ui/core';
+import { Box } from '@chakra-ui/core';
 import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 interface Props {}
 
 const Logo = (props: Props) => {
   return (
-    <Button variant="outline" bg="primary.500">
-      bluedot
-    </Button>
+    <Box as="h1" fontWeight="800" fontSize="1.4rem">
+      <Link to="/">BLUEDOT</Link>
+    </Box>
   );
 };
 
